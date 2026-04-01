@@ -56,5 +56,11 @@ dependencies {
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
 
+    //Icons
     implementation("androidx.compose.material:material-icons-extended:1.7.8")
+
+    //Charts
+    implementation("com.patrykandpatrick.vico:compose:2.4.3")
+    implementation("com.patrykandpatrick.vico:compose-m3:2.4.3")
+    implementation("com.patrykandpatrick.vico:core:2.4.3")
 }

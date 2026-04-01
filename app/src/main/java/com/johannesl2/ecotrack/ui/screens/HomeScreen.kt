@@ -17,6 +17,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.johannesl2.ecotrack.ui.components.Input.InputSection
+import com.johannesl2.ecotrack.ui.components.chart.ChartSection
 import com.johannesl2.ecotrack.ui.components.feedback.SummaryCard
 
 @Composable
@@ -33,12 +34,16 @@ fun HomeScreen() {
             text = "EcoTrack",
             style = MaterialTheme.typography.headlineMedium,
             fontWeight = FontWeight.Bold,
-            color = Color(0xFF6EC265)
+            color = Color.Black
         )
 
         Spacer(modifier = Modifier.height(24.dp))
 
         SummaryCard(amount = "12.4")
+
+        Spacer(modifier = Modifier.height(24.dp))
+
+        ChartSection()
 
         Spacer(modifier = Modifier.height(24.dp))
 
