@@ -16,6 +16,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import com.johannesl2.ecotrack.ui.components.Input.InputSection
+import com.johannesl2.ecotrack.ui.components.feedback.SummaryCard
 
 @Composable
 fun HomeScreen() {
@@ -31,9 +33,17 @@ fun HomeScreen() {
             text = "EcoTrack",
             style = MaterialTheme.typography.headlineMedium,
             fontWeight = FontWeight.Bold,
-            color = Color.Green
+            color = Color(0xFF6EC265)
         )
 
         Spacer(modifier = Modifier.height(24.dp))
+
+        SummaryCard(amount = "12.4")
+
+        Spacer(modifier = Modifier.height(24.dp))
+
+        InputSection()
+
+
     }
 }
