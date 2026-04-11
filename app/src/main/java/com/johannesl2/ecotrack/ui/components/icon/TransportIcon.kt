@@ -27,13 +27,13 @@ fun TransportIcon(
     onClick: () -> Unit
 ) {
     Column(
-        horizontalAlignment = Alignment.CenterHorizontally,
-        modifier = Modifier.clickable(onClick = onClick)
+        horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Box(
             modifier = Modifier
                 .size(60.dp)
                 .clip(RoundedCornerShape(16.dp))
+                .clickable(onClick = onClick)
                 .background(if (isSelected) Color(0xFFD7E8CD) else Color(0xFFF0F0F0)),
             contentAlignment = Alignment.Center
         ) {

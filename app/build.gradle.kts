@@ -63,4 +63,9 @@ dependencies {
     implementation("com.patrykandpatrick.vico:compose:2.4.3")
     implementation("com.patrykandpatrick.vico:compose-m3:2.4.3")
     implementation("com.patrykandpatrick.vico:core:2.4.3")
+
+    //NavController
+    val nav_version = "2.9.7"
+
+    implementation("androidx.navigation:navigation-compose:$nav_version")
 }
